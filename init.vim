@@ -1,3 +1,8 @@
+" Install VimPlug from GitHub following the instructions:
+" https://github.com/junegunn/vim-plug
+"
+" Install all the plugins using :PlugInstall command.
+
 set encoding=utf-8
 set number
 syntax enable
