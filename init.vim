@@ -28,6 +28,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'kassio/neoterm'
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
 colorscheme gruvbox
@@ -39,6 +40,7 @@ if (has("termguicolors"))
 endif
 
 lua require 'colorizer'.setup()
+lua require 'gitsigns'.setup()
 
 " Editing
 "
