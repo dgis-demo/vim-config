@@ -45,6 +45,10 @@ lua require 'gitsigns'.setup()
 " Editing
 "
 
+" Disable copy/paste default mechanism
+vnoremap p "0p
+
+
 " Shift+Space (@ - space)
 inoremap <S-Space> <C-o>$
 
