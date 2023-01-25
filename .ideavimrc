@@ -18,7 +18,8 @@ map J gT
 map K gt 
 map H <C-w>w
 map L <C-w>v
-vnoremap p "0p
+vnoremap p "+p
+vnoremap y "+y
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
