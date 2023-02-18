@@ -20,6 +20,8 @@ map H <C-w>w
 map L <C-w>v
 noremap p "+p
 noremap y "+y
+noremap yy "+yy
+noremap dd "+dd
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action

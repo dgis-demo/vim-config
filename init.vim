@@ -45,11 +45,11 @@ lua require 'gitsigns'.setup()
 " Editing
 "
 
-" Disable copy/paste default mechanism
+" Improve copy/paste default mechanism - use clipboard
 noremap p "+p
-
-" Set copying to the clipboard
 noremap y "+y
+noremap yy "+yy
+noremap dd "+dd
 
 
 " Shift+Space (@ - space)
