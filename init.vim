@@ -17,6 +17,10 @@ set expandtab
 set autoindent
 set fileformat=unix
 
+" Use system clipboard for all the operations
+" (see :help clipboard)
+set clipboard+=unnamedplus
+
 " VimPlug plugins 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
@@ -44,13 +48,6 @@ lua require 'gitsigns'.setup()
 
 " Editing
 "
-
-" Improve copy/paste default mechanism - use clipboard
-noremap p "+p
-noremap y "+y
-noremap yy "+yy
-noremap dd "+dd
-
 
 " Shift+Space (@ - space)
 inoremap <S-Space> <C-o>$

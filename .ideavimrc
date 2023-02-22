@@ -12,16 +12,15 @@ set NERDTree
 set visualbell
 set noerrorbells
 
+" Use system clipboard for all the operations
+set clipboard+=unnamedplus
+
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 map J gT
 map K gt 
 map H <C-w>w
 map L <C-w>v
-noremap p "+p
-noremap y "+y
-noremap yy "+yy
-noremap dd "+dd
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
