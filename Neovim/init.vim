@@ -18,7 +18,7 @@ set autoindent
 set fileformat=unix
 
 " Use system clipboard for all the operations
-" (see :help clipboard)
+" :help clipboard
 set clipboard+=unnamedplus
 
 " VimPlug plugins 
@@ -57,25 +57,33 @@ nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 " NERDTree
-"let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=1
 let g:NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
 nmap <A-1> :NERDTreeToggle<CR>
-nmap <S-h> :NERDTreeFocus<CR>
+"nmap <S-h> :NERDTreeFocus<CR>
+nmap <S-h> :wincmd w<CR>
 
 " Tabs
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemode=':t'
-nmap <S-j> :bp<CR>
-nmap <S-k> :bn<CR>
+"nmap <S-j> :bp<CR>
+"nmap <S-k> :bn<CR>
+nmap <S-j> :tabprev<CR>
+nmap <S-k> :tabnext<CR>
 nmap <C-w> :bd<CR>
+"nmap <C-q> :wincmd w<CR>
 
 " Neoterm
-let g:neoterm_default_mod = 'botright'
+let g:neoterm_default_mod = 'tab'
 let g:neoterm_size = 10
 let g:neoterm_autoinsert = 1
 let g:neoterm_autoscroll = 1
 "let g:neoterm_term_per_tab = 1
 nnoremap <A-2> :Ttoggle<CR>
-inoremap <A-2> :Ttoggle<CR>
-tnoremap <A-2> exit<CR>
+inoremap <A-2> <Esc>:Ttoggle<CR>
+tnoremap <A-2> <C-\><C-n>:setlocal scrolloff=0<CR>
+
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
